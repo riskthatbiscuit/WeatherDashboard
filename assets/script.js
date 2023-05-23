@@ -14,6 +14,7 @@ const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
 
 searchForm.addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent form submission
+    console.log("Get this started");
     currentCity();
 });
 
@@ -154,7 +155,7 @@ function loadForecast(pulledData) {
         dayCard.appendChild(dayCardWind);
         dayCard.appendChild(dayCardHum);
 
-            // Parse the date from the response
+        // Parse the date from the response
         var date = new Date(pulledData.list[days5[i]].dt_txt);
         // Get the day of the week
         var dayOfWeek = days[date.getDay()];
