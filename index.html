@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="assets/reset.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Dashboard</title>
+        <link rel="stylesheet" href="assets/reset.css">
+        <link rel="stylesheet" href="assets/style.css">
+        <script src="https://kit.fontawesome.com/ec5ce06bd8.js" crossorigin="anonymous"></script>  
 </head>
 <body>
     <header>
@@ -19,45 +20,23 @@
                 <input type="text" id="citySrch">
             </form>
             <button type="button" id="searchBtn">Search</button>
-            <ul class = "searchHistory" id="history">
-                <p>Atlanta</p>
-                <p>Denver</p>
-                <p>Seattle</p>
-            </ul>
+            <ul class = "searchHistory" id="history"></ul>
         </section>
         <section id="forecastSec">
             <div id="current">
-                <h2>Weather</h2>
-                <p>Temp:</p>
-                <p>Wind:</p>
-                <p>Humidity:</p>
+                <h2>Current Weather:</h2>
+                <h2 id="currentLoc"></h2>
+                <img id="currentSymb" src=""></img>
+                <p id="currentTemp"></p>
+                <p id="currentWind"></p>
+                <p id="currentHum"></p>
             </div>
-            <div id="fiveDays">
-                <h2>5 Day Forecast:</h2>
-                <ul class = "forecast">
-                    <div class="dayCard">
-                        <p>Today</p>
-                    </div>
-                    <div class="dayCard">
-                        <p>Tomorrow</p>
-                    </div>
-                    <div class="dayCard">
-                        <p>Tomorrow</p>
-                    </div>
-                    <div class="dayCard">
-                        <p>Tomorrow</p>
-                    </div>
-                    <div class="dayCard">
-                        <p>Tomorrow</p>
-                    </div>
-                </ul>
+        <div id="fiveDays">
+                <h2>5-Day Midday Forecast:</h2>
+                <ul class = "forecast" id="forecast"></ul>
             </div>
-            <div>
-
-            </div>
-
         </section>
     </main>
-    <script src="./assets/script.js"></script>   
+    <script src="./assets/script.js"></script> 
 </body>
 </html>

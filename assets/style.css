@@ -61,22 +61,6 @@ main {
     flex-grow: 3;
 }
 
-.forecast {
-    /* Setting the parameters for each of the sections contained within Main */
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.dayCard {
-    width: 15%;
-    height: 300px;
-    padding:10px;
-    margin: 10px;
-    border-radius: 5px;
-    background-color: var(--dark);
-    color: var(--writing);
-}
 
 .searchHistory {
     border-top: 1px solid var(--dark);
@@ -114,3 +98,33 @@ main {
     border-bottom:1px solid var(--dark);
 }
 
+/* FORECASTS */
+.forecast {
+    /* Setting the parameters for each of the sections contained within Main */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* DAYCARDS */
+.dayCard {
+    width: 20%;
+    height: 300px;
+    padding:10px;
+    margin: 10px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    background-color: var(--dark);
+    color: var(--writing);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dayCard .dayName {
+    font-size: 24px;
+}
+
+.dayCard i {
+    color: var(--light);
+}
