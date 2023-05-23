@@ -1,4 +1,6 @@
-const APIKey = "4c40bc90efb07222ff1d873fc634eb67";
+console.log("HELLO");
+
+const APIKey = "ce2a80e4badc9c86136b1d15faae58b9";
 const searchForm = document.querySelector("#searchForm");
 const currentLoc = document.querySelector("#currentLoc");
 const currentDateElement = document.querySelector("#currentDate");
@@ -17,6 +19,9 @@ searchForm.addEventListener("submit", function(event) {
     console.log("Get this started");
     currentCity();
 });
+
+const searchBtn = document.querySelector("#searchBtn");
+searchBtn.addEventListener("click", currentCity);
 
 // Move the queryURL inside the forecastCity function
 function currentCity () {
