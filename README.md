@@ -1,6 +1,3 @@
-Certainly! Here's an updated version of the README file with emojis added:
-
-```markdown
 # 🌤️ Weather Dashboard
 
 The Weather Dashboard is a web application that allows users to search for the current weather and a 5-day midday forecast of a specific city. It utilizes the OpenWeatherMap API to fetch weather data and display it in a user-friendly interface.
@@ -39,10 +36,9 @@ The application requires an API key from OpenWeatherMap to access weather data. 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
 
 ## Screenshot
 ![Screenshot](assets/WeatherDashboard.png)
 
 ## Link to deployed website
-[Website Link](https://riskthatbiscuit.github.io/WorkDayCalendar/)
+[Website Link](https://riskthatbiscuit.github.io/WeatherDashboard/)
