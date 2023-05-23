@@ -95,7 +95,7 @@ const currentDate = new Date().toLocaleString('en-US', { weekday: 'long', hour: 
 function loadWeather(pulledData) {
     currentLoc.innerHTML = pulledData.name;
     currentDateElement.innerHTML = currentDate;
-    currentSymb.src = "http://openweathermap.org/img/w/" + pulledData.weather[0].icon + ".png";
+    currentSymb.src = "https://openweathermap.org/img/w/" + pulledData.weather[0].icon + ".png";
     currentSymb.alt = pulledData.weather[0].description;
     currentTemp.innerHTML = "Temp: " + pulledData.main.temp + "°C";
     currentWind.innerHTML = "Wind: " + pulledData.wind.speed + "m/s";
@@ -168,7 +168,7 @@ function loadForecast(pulledData) {
         // Update each of the card elements with values
         dayCardDate.innerHTML = formattedDate;
         dayCardName.innerHTML = dayOfWeek;
-        dayCardSymb.src = "http://openweathermap.org/img/wn/" + pulledData.list[days5[i]].weather[0].icon + ".png";
+        dayCardSymb.src = "https://openweathermap.org/img/wn/" + pulledData.list[days5[i]].weather[0].icon + ".png";
         dayCardSymb.alt = pulledData.list[days5[i]].weather[0].description;
         dayCardTemp.innerHTML = "Temp: " + pulledData.list[days5[i]].main.temp + "°C";
         dayCardWind.innerHTML = "Wind: " + pulledData.list[days5[i]].wind.speed + "m/s";
