@@ -1,5 +1,3 @@
-console.log("HELLO");
-
 const APIKey = "ce2a80e4badc9c86136b1d15faae58b9";
 const searchForm = document.querySelector("#searchForm");
 const currentLoc = document.querySelector("#currentLoc");
@@ -16,7 +14,6 @@ const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 
 
 searchForm.addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent form submission
-    console.log("Get this started");
     currentCity();
 });
 
@@ -26,7 +23,7 @@ searchBtn.addEventListener("click", currentCity);
 // Move the queryURL inside the forecastCity function
 function currentCity () {
     const city = document.querySelector("#citySrch").value;
-    const queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey + "&units=metric";
+    const queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey + "&units=metric";
     
     fetch(queryURL)
     .then(function(response) {
@@ -43,7 +40,7 @@ function currentCity () {
 
 function forecastCity() {
     const city = document.querySelector("#citySrch").value;
-    const queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIKey + "&units=metric";
+    const queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIKey + "&units=metric";
     
     fetch(queryURL)
     .then(function(response) {
